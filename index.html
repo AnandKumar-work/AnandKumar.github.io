@@ -4,86 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anand Kumar - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-            line-height: 1.6;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
+            background-color: #121212;
+            color: #fff;
         }
         header {
-            background: #333;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #1f1f1f;
+            border-bottom: 1px solid #333;
         }
         header h1 {
             margin: 0;
+            font-size: 24px;
         }
         nav ul {
-            padding: 0;
             list-style: none;
-            text-align: center;
+            padding: 0;
+            margin: 0;
+            display: flex;
         }
         nav ul li {
-            display: inline;
-            margin: 0 10px;
+            margin: 0 15px;
         }
         nav ul li a {
             color: #fff;
             text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
+            font-weight: 500;
         }
         .showcase {
-            background: url('https://source.unsplash.com/random/1920x1080') no-repeat center center/cover;
-            height: 100vh;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            color: #fff;
+            justify-content: center;
+            height: 100vh;
             text-align: center;
-            padding: 0 20px;
+            background: url('https://source.unsplash.com/random/1920x1080') no-repeat center center/cover;
         }
         .showcase h1 {
             font-size: 50px;
-            margin-bottom: 10px;
+            margin: 0;
         }
         .showcase p {
             font-size: 20px;
+            margin: 10px 0;
         }
-        .skills, .projects, .contact {
-            padding: 20px 0;
+        .content {
+            padding: 50px 20px;
+            text-align: center;
         }
         .section-title {
-            text-align: center;
+            font-size: 36px;
             margin-bottom: 20px;
-            font-size: 24px;
         }
-        .skills-list, .projects-list, .contact-info {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .skills-item, .project-item, .contact-item {
-            background: #fff;
-            margin: 10px;
+        .card {
+            background: #1f1f1f;
             padding: 20px;
-            border-radius: 5px;
-            width: 300px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-10px);
         }
         footer {
-            background: #333;
-            color: #fff;
+            background: #1f1f1f;
+            padding: 20px;
             text-align: center;
-            padding: 20px 0;
         }
         footer a {
             color: #77aaff;
@@ -93,65 +87,42 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Anand Kumar</h1>
-            <nav>
-                <ul>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>Anand Kumar</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <section class="showcase">
-        <div>
-            <h1>Welcome to My Portfolio</h1>
-            <p>Hi, I'm Anand Kumar. Welcome to my personal portfolio where I showcase my projects and professional achievements.</p>
-        </div>
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hi, I'm Anand Kumar. Welcome to my personal portfolio where I showcase my projects and professional achievements.</p>
     </section>
-    <section class="skills container" id="skills">
-        <h2 class="section-title">Skills</h2>
-        <div class="skills-list">
-            <div class="skills-item">
-                <h3>Skill 1</h3>
-                <p>Description of Skill 1.</p>
-            </div>
-            <div class="skills-item">
-                <h3>Skill 2</h3>
-                <p>Description of Skill 2.</p>
-            </div>
-            <div class="skills-item">
-                <h3>Skill 3</h3>
-                <p>Description of Skill 3.</p>
-            </div>
-        </div>
-    </section>
-    <section class="projects container" id="projects">
+    <div class="content" id="about">
+        <h2 class="section-title">About Me</h2>
+        <p>A passionate and skilled engineer...</p>
+    </div>
+    <div class="content" id="projects">
         <h2 class="section-title">Projects</h2>
-        <div class="projects-list">
-            <div class="project-item">
-                <h3>Project 1</h3>
-                <p>Description of Project 1.</p>
-            </div>
-            <div class="project-item">
-                <h3>Project 2</h3>
-                <p>Description of Project 2.</p>
-            </div>
-            <div class="project-item">
-                <h3>Project 3</h3>
-                <p>Description of Project 3.</p>
-            </div>
+        <div class="card">
+            <h3>Project 1</h3>
+            <p>Description of Project 1.</p>
         </div>
-    </section>
-    <section class="contact container" id="contact">
+        <div class="card">
+            <h3>Project 2</h3>
+            <p>Description of Project 2.</p>
+        </div>
+        <div class="card">
+            <h3>Project 3</h3>
+            <p>Description of Project 3.</p>
+        </div>
+    </div>
+    <div class="content" id="contact">
         <h2 class="section-title">Contact</h2>
-        <div class="contact-info">
-            <div class="contact-item">
-                <p>Connect with me on <a href="https://www.linkedin.com/in/yourlinkedinprofile" target="_blank">LinkedIn</a></p>
-            </div>
-        </div>
-    </section>
+        <p>Connect with me on <a href="https://www.linkedin.com/in/yourlinkedinprofile" target="_blank">LinkedIn</a></p>
+    </div>
     <footer>
         <p>&copy; 2024 Anand Kumar</p>
     </footer>
