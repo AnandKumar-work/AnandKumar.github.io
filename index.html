@@ -3,77 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anand Kumar | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Your Name - Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Anand Kumar</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <section id="about" class="section">
-            <div class="container">
+    <div class="container">
+        <nav class="sidebar">
+            <div class="nav-item">About</div>
+            <div class="nav-item">Resume</div>
+            <div class="nav-item">Portfolio</div>
+            <div class="nav-item">Blog</div>
+            <div class="nav-item">Contact</div>
+        </nav>
+        <main>
+            <header>
+                <img src="your-profile-picture.jpg" alt="Your Name" class="profile-pic">
+                <h1>Your Name</h1>
+                <p>Your Job Title</p>
+                <div class="social-icons">
+                    <!-- Add social media icons here -->
+                </div>
+                <div class="contact-info">
+                    <p>Email: your.email@example.com</p>
+                    <p>Location: Your City, Country</p>
+                    <p>Status: Available</p>
+                </div>
+                <button class="download-cv">Download CV</button>
+            </header>
+            <section class="about-me">
                 <h2>About Me</h2>
-                <p>Welcome to my portfolio website! I am Anand Kumar, a passionate software developer...</p>
-            </div>
-        </section>
-        <section id="experience" class="section">
-            <div class="container">
-                <h2>Experience</h2>
-                <div class="experience-item">
-                    <h3>Job Title 1</h3>
-                    <p>Description of job experience...</p>
+                <p>Your description here...</p>
+            </section>
+            <section class="what-im-doing">
+                <h2>What I'm Doing</h2>
+                <div class="skills">
+                    <div class="skill-item">
+                        <img src="devops-icon.png" alt="DevOps">
+                        <h3>DevOps</h3>
+                        <p>Brief description...</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="cloud-icon.png" alt="Cloud Engineer">
+                        <h3>Cloud Engineer</h3>
+                        <p>Brief description...</p>
+                    </div>
                 </div>
-                <div class="experience-item">
-                    <h3>Job Title 2</h3>
-                    <p>Description of job experience...</p>
-                </div>
-            </div>
-        </section>
-        <section id="projects" class="section">
-            <div class="container">
-                <h2>Projects</h2>
-                <div class="project-item">
-                    <h3>Project 1</h3>
-                    <p>Description of project...</p>
-                </div>
-                <div class="project-item">
-                    <h3>Project 2</h3>
-                    <p>Description of project...</p>
-                </div>
-            </div>
-        </section>
-        <section id="skills" class="section">
-            <div class="container">
-                <h2>Skills</h2>
-                <p>List of skills...</p>
-            </div>
-        </section>
-        <section id="contact" class="section">
-            <div class="container">
-                <h2>Contact</h2>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/anandkumar">LinkedIn Profile</a></p>
-                <p>Email: <a href="mailto:anand@example.com">anand@example.com</a></p>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Anand Kumar. All rights reserved.</p>
-        </div>
-    </footer>
+            </section>
+        </main>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
