@@ -11,111 +11,93 @@
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
+            line-height: 1.6;
         }
         .container {
             width: 80%;
             margin: 0 auto;
-            overflow: hidden;
         }
         header {
             background: #333;
             color: #fff;
             padding: 20px 0;
-            border-bottom: #77aaff 3px solid;
+            text-align: center;
         }
-        header a {
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
             color: #fff;
             text-decoration: none;
             text-transform: uppercase;
             font-size: 16px;
         }
-        header ul {
-            padding: 0;
-            list-style: none;
-            text-align: right;
-        }
-        header li {
-            display: inline;
-            padding: 0 20px;
-        }
-        header #branding {
-            float: left;
-        }
-        header #branding h1 {
-            margin: 0;
-        }
-        header nav {
-            float: right;
-            margin-top: 10px;
-        }
         .showcase {
-            min-height: 500px;
             background: url('https://source.unsplash.com/random/1920x1080') no-repeat center center/cover;
-            text-align: center;
-            color: #fff;
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
+            color: #fff;
+            text-align: center;
+            padding: 0 20px;
         }
         .showcase h1 {
-            font-size: 55px;
+            font-size: 50px;
             margin-bottom: 10px;
         }
         .showcase p {
             font-size: 20px;
-            max-width: 700px;
-            line-height: 1.6;
         }
-        .projects {
+        .skills, .projects, .contact {
             padding: 20px 0;
-            margin: 20px 0;
-            background: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .projects h2 {
+        .section-title {
             text-align: center;
             margin-bottom: 20px;
+            font-size: 24px;
         }
-        .projects .project {
-            background: #f9f9f9;
-            margin-bottom: 20px;
+        .skills-list, .projects-list, .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .skills-item, .project-item, .contact-item {
+            background: #fff;
+            margin: 10px;
             padding: 20px;
             border-radius: 5px;
-            border: #ddd 1px solid;
-            transition: transform 0.3s ease-in-out;
-        }
-        .projects .project:hover {
-            transform: scale(1.05);
-        }
-        .projects .project h3 {
-            margin-top: 0;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         footer {
             background: #333;
             color: #fff;
             text-align: center;
-            padding: 30px 0;
-            margin-top: 30px;
+            padding: 20px 0;
         }
         footer a {
             color: #77aaff;
             text-decoration: none;
-        }
-        footer a:hover {
-            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <div id="branding">
-                <h1>Anand Kumar</h1>
-            </div>
+            <h1>Anand Kumar</h1>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -128,23 +110,50 @@
             <p>Hi, I'm Anand Kumar. Welcome to my personal portfolio where I showcase my projects and professional achievements.</p>
         </div>
     </section>
-    <section class="projects container" id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Description of Project 1.</p>
-        </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>Description of Project 2.</p>
-        </div>
-        <div class="project">
-            <h3>Project 3</h3>
-            <p>Description of Project 3.</p>
+    <section class="skills container" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-list">
+            <div class="skills-item">
+                <h3>Skill 1</h3>
+                <p>Description of Skill 1.</p>
+            </div>
+            <div class="skills-item">
+                <h3>Skill 2</h3>
+                <p>Description of Skill 2.</p>
+            </div>
+            <div class="skills-item">
+                <h3>Skill 3</h3>
+                <p>Description of Skill 3.</p>
+            </div>
         </div>
     </section>
-    <footer id="contact">
-        <p>Connect with me on <a href="https://www.linkedin.com/in/yourlinkedinprofile" target="_blank">LinkedIn</a></p>
+    <section class="projects container" id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-list">
+            <div class="project-item">
+                <h3>Project 1</h3>
+                <p>Description of Project 1.</p>
+            </div>
+            <div class="project-item">
+                <h3>Project 2</h3>
+                <p>Description of Project 2.</p>
+            </div>
+            <div class="project-item">
+                <h3>Project 3</h3>
+                <p>Description of Project 3.</p>
+            </div>
+        </div>
+    </section>
+    <section class="contact container" id="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <p>Connect with me on <a href="https://www.linkedin.com/in/yourlinkedinprofile" target="_blank">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Anand Kumar</p>
     </footer>
 </body>
 </html>
