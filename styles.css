@@ -3,6 +3,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
@@ -44,10 +46,12 @@ section {
     padding: 2rem 0;
 }
 
-.project {
-    border: 1px solid #ddd;
+.experience-item, .project-item {
+    background-color: #fff;
     padding: 1rem;
     margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 footer {
@@ -64,4 +68,69 @@ footer {
 
 #contact a:hover {
     text-decoration: underline;
+}
+
+.section {
+    padding: 50px 0;
+}
+
+h1, h2 {
+    font-weight: 300;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    padding: 0 20px;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #777;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-github {
+    background: #333;
+    color: white;
 }
