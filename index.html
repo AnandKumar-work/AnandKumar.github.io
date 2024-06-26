@@ -3,54 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Personal Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Anand Kumar - Cloud DevOps Engineer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e1e;
+            color: #ffffff;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #2a2a2a;
+            padding: 20px;
+        }
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        .profile {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .nav-item {
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #3a3a3a;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .section {
+            background-color: #2a2a2a;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .skills {
+            display: flex;
+            justify-content: space-between;
+        }
+        .skill-item {
+            width: 48%;
+            background-color: #3a3a3a;
+            padding: 15px;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <nav class="sidebar">
+        <div class="sidebar">
+            <div class="profile">
+                <img src="anand-kumar.jpg" alt="Anand Kumar" class="profile-img">
+                <h2>Anand Kumar</h2>
+                <p>Sr. Cloud DevOps Engineer</p>
+            </div>
             <div class="nav-item">About</div>
             <div class="nav-item">Resume</div>
             <div class="nav-item">Portfolio</div>
             <div class="nav-item">Blog</div>
             <div class="nav-item">Contact</div>
-        </nav>
-        <main>
-            <header>
-                <img src="your-profile-picture.jpg" alt="Your Name" class="profile-pic">
-                <h1>Your Name</h1>
-                <p>Your Job Title</p>
-                <div class="social-icons">
-                    <!-- Add social media icons here -->
-                </div>
-                <div class="contact-info">
-                    <p>Email: your.email@example.com</p>
-                    <p>Location: Your City, Country</p>
-                    <p>Status: Available</p>
-                </div>
-                <button class="download-cv">Download CV</button>
-            </header>
-            <section class="about-me">
+        </div>
+        <div class="main-content">
+            <div class="section">
                 <h2>About Me</h2>
-                <p>Your description here...</p>
-            </section>
-            <section class="what-im-doing">
+                <p>Sr. DevOps/Cloud engineer with more than 6 years of experience in DevOps, cloud technologies (Azure & AWS), configuration management, source code management, infrastructure automation, and continuous integration and delivery (CI/CD).</p>
+            </div>
+            <div class="section">
                 <h2>What I'm Doing</h2>
                 <div class="skills">
                     <div class="skill-item">
-                        <img src="devops-icon.png" alt="DevOps">
                         <h3>DevOps</h3>
-                        <p>Brief description...</p>
+                        <p>Implementing CI/CD pipelines, infrastructure automation, and containerization.</p>
                     </div>
                     <div class="skill-item">
-                        <img src="cloud-icon.png" alt="Cloud Engineer">
                         <h3>Cloud Engineer</h3>
-                        <p>Brief description...</p>
+                        <p>Designing and managing cloud environments on AWS and Azure platforms.</p>
                     </div>
                 </div>
-            </section>
-        </main>
+            </div>
+        </div>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
